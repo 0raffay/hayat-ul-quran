@@ -33,7 +33,7 @@ include("includes/site-info.php");
     <section class="home-banner p-0">
         <div class="container-fluid p-md-0">
             <div class="banner-video-wrap">
-                <video muted loop width="100%">
+                <video autoplay muted loop width="100%">
                     <source src="assets/video/makkah-2.mp4" type="video/mp4">
                     <!-- <source src="assets/video/makkah-2.mp4" type="video/mp4"> -->
                     Your browser does not support the video tag.
@@ -46,7 +46,7 @@ include("includes/site-info.php");
                         <img src="assets/images/bismillah-text.png" alt="Bismillah Text">
                     </div>
                     <h1 class="fc-gold fs-60">Hayat Ul Quran</h1>
-                    <h2 class="fc-white fs-35 mb-15 text-shadow-white">Online Quran Academy</h2>
+                    <h2 class="fc-white fs-35 mb-15 text-shadow-white">Online Academy</h2>
                     <i class="fc-white text-italic mb-15 d-block lh-1-5">"The example of a believer who recites the Quran is like that of <br> a citron, its taste is delicious and its fragrance spreads."</i>
                     <div class="button-wrap">
                         <button class="btn btn-primary">Register Now</button>

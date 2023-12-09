@@ -1,15 +1,211 @@
 @media only screen and (max-width: 1660px) {}
 
-@media only screen and (max-width: 1360px) {}
+@media only screen and (max-width: 1440px) {
+    .sliderButton {
+        top: 9px;
+    }
 
-@media only screen and (max-width: 1240px) {}
+}
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 1240px) {
+    .testimonialCard {
+        margin: auto;
+    }
+ 
+    .testimonialPerson  {
+        justify-content: center;
+        margin-top: 20px;
+    }
 
-@media only screen and (max-width: 767px) {
-    .span-two {
-        grid-column: span 1;
+    
+.banner-text h1 {
+    font-size: 60px;
+}
+
+.banner-text h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner-text i {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.banner-text .btn {
+    font-size: 18px;
+    padding: .7em 2.5em;
+} 
+}
+
+@media only screen and (max-width: 992px) {
+
+    .section__heading {
+        text-wrap: balance;
+        text-align: center;
+    }
+
+    :root {
+        --section-padding: 70px 0;
+    }
+
+    :is(.footer__text, .footer__listContainer, .footer__info){
+        max-width: 100%;
+        width: 100%;
+    }
+    .top-header {
+        display: none;
+    }
+    .footer__listContainer > div {
+        margin-right: auto;
+    }
+    .footer__listContainer,
+    .footer__info {
+        margin-inline: auto;
+    }
+    .feature-card {
+        margin-bottom: 20px;
+    }
+
+    .banner-text {
+        position: static;
+        background: none;
+        min-height: 100vh;
+        background: url(../images/mobile-bg-home.png) center/cover no-repeat;
+        background-size: 101vw 101%;
+    }
+    .bottom__footer {
+        text-align: center;
+    }
+
+    .banner-video-wrap {
+        display: none;
+    }
+    .home-banner {
+        max-height: 100%;
+    }
+
+    .round-list  {
+    gap: 60px;
     }
 }
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 767px) {
+    :root {
+        --fs-16: 14px;
+        --section-padding: 50px 0;
+    }
+
+    .side-prop::after {
+        display: none;
+    }
+
+    .span-two {
+        grid-column: span 1;
+    }
+
+    .feature-card {
+        min-height: auto;
+        padding: 30px 10px;
+    }
+
+    .section__label {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    
+
+    .stepCardMainContent p  {
+        font-size: var(--fs-16);
+    }
+    .stepCardMainContent h4,
+    .section__heading {
+        margin-bottom: .5em;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .round-list {
+    gap: 20px;
+    }
+    .stepTextContent {
+        margin-bottom: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    :root {
+        --fs-45: 32px;
+    }
+    .header-container {
+        padding-inline: 20px;
+    }
+    .round-list {
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    .round-list li::after {
+        display: none;
+    }
+    .round-list li {
+        position: static;
+    }
+    .counterCard {
+        margin-bottom: 15px;
+    }
+    .accordion__title {
+        font-size: var(--fs-18);
+    }
+
+    .ctaCard .section__label {
+        margin-bottom: 5px;
+    }
+
+    .ctaCard p {
+        font-size: var(--fs-16);
+        margin-bottom: 12px;
+    }
+
+    .accordion__text,
+    .testimonialPerson h5 {
+        font-size: var(--fs-16);
+    }
+
+    .testimonialCard {
+        max-width: 95%;
+        margin-inline: auto;
+    }
+    footer {
+        padding: 40px 0;
+    }
+
+    .top__footer {
+        margin-bottom: 20px;
+    }
+    .banner-text {
+        background-size: cover;
+    }
+    .stepCard  {
+        gap: 5px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 40px;
+    }
+    .banner-text h2 {
+        font-size: 30px;
+    }
+    .banner-text .btn {
+        font-size: 16px;
+    }
+    .banner-text i {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .stepCard i {
+        font-size: 56px;
+    }
+}

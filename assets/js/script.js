@@ -2,6 +2,7 @@ $(document).ready(function () {
     header();
 });
 
+
 function header() {
     $(window).scroll(function () {
         var sticky = $('header'),
@@ -10,8 +11,31 @@ function header() {
         if (scroll >= 130) sticky.addClass('fixed');
         else sticky.removeClass('fixed');
     });
-}
 
+    let burgerButton = $('.burgerButton')
+    let mobileMenu = $('.mobileMenu')
+
+    let closeButton = $('.mobileMenuClose')
+
+    burgerButton.click(function () {
+        mobileMenu.toggleClass('active')
+    })
+
+    closeButton.click(function () {
+        mobileMenu.removeClass('active')
+    })
+
+    let mobileSubmenuButton = $('.rf--mobileSubmenu-button')
+    let mobileSubmenu = '.rf--mobile-submenu'
+    $(mobileSubmenu).slideUp();
+
+    mobileSubmenuButton.click(function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('active')
+        $(this).find(mobileSubmenu).slideToggle();
+    })
+}
 
 function validateForm(options, action) {
     let errorClass = options.errorClass || "error";
@@ -122,8 +146,6 @@ function tabbing(
     let buttons = $(buttonClassByContainer);
     let panels = $(panelClassByContainer);
 
-    panels.not(panels.eq(0)).hide();
-
     buttons.click(function () {
         let itsIndex = $(this).index();
         if (panels.eq(itsIndex).length != 0) {
@@ -136,6 +158,8 @@ function tabbing(
         }
     });
 }
+
+tabbing(".round-list li", ".about-rounded-card > div", "active");
 
 function toggler(options) {
     const button = $(options.button);
@@ -160,3 +184,83 @@ function toggler(options) {
         action.toggleClass(classToAdd);
     });
 }
+
+
+/// SLIDER JS HERE
+
+$('.slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    speed: 1000,
+    arrows: true,
+    nextArrow: $('#prevBtn'),
+    prevArrow: $('#nextBtn'),
+    responsive: [
+        {
+            breakpoint: 1300,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+});
+
+
+function accordion() {
+    let accordionButton = $(".accordion__button");
+    let panel = $(".accordion__panel");
+    let activePanel = $(".accordion__panel.active");
+    activePanel.slideDown();
+
+    accordionButton.click(function () {
+        let isActive = $(this).hasClass("active");
+        if (!isActive) {
+            accordionButton.removeClass("active");
+            panel.slideUp();
+            $(this).addClass("active");
+            $(this).next().slideDown();
+        } else {
+            $(this).next().slideUp()
+            $(this).removeClass("active")
+        }
+    });
+}
+accordion();
+
+$(window).on("scroll", function () {
+    var section = $(".counterSection");
+    var windowHeight = $(window).height();
+    var windowScrollTop = $(window).scrollTop();
+    var sectionOffset = section.offset().top;
+    if (windowScrollTop + (windowHeight / 2) > sectionOffset) {
+        $(".count").each(function () {
+            var $this = $(this);
+            // Check if the counter has already been animated
+            if (!$this.data("animated")) {
+                var countValue = $this.text().replace(/,/g, '');
+                $this.text("0");
+                $this.data("animated", true); // Mark as animated to avoid resetting
+                $({
+                    Counter: 0
+                }).animate(
+                    {
+                        Counter: countValue,
+                    },
+                    {
+                        duration: 2000,
+                        easing: "swing",
+                        step: function () {
+                            $this.text(Math.ceil(this.Counter).toLocaleString());
+                        },
+                        complete: function () {
+                            $this.text(this.Counter.toLocaleString());
+                        },
+                    }
+                );
+            }
+        });
+    }
+});

@@ -3,19 +3,22 @@
     --ff-secondary: 'Ariel', sans-serif;
 
     /* --clr-gold: #e2c255; */
-    
+
     --clr-gold: #dfb85d;
     --clr-gold-700: #BE9552;
+    --clr-gold-400: #F5D4A3;
+    --clr-gold-300: #FBEEDA;
 
     --clr-green: #0C7C59;
     --clr-cream: #F5F5F5;
     --clr-dark: #242424;
 
-    
-    --section-padding: 100px 0;
+
+    --section-padding: 60px 0;
 
     --fs-14: 14px;
     --fs-16: 16px;
+    --fs-20: 20px;
     --fs-18: 18px;
     --fs-22: 22px;
     --fs-24: 24px;

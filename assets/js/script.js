@@ -1,6 +1,54 @@
 $(document).ready(function () {
     header();
+    slider();
 });
+
+function slider() {
+    $(".pricing").slick({
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: "5px",
+        dots: true,
+        arrows: true,
+        nextArrow: $(".feesSliderButton #next"),
+        prevArrow: $(".feesSliderButton #prev"),
+        responsive: [
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+    })
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        speed: 1000,
+        arrows: true,
+        nextArrow: $('#prevBtn'),
+        prevArrow: $('#nextBtn'),
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+    });
+}
 
 
 function header() {
@@ -188,25 +236,7 @@ function toggler(options) {
 
 /// SLIDER JS HERE
 
-$('.slider').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    speed: 1000,
-    arrows: true,
-    nextArrow: $('#prevBtn'),
-    prevArrow: $('#nextBtn'),
-    responsive: [
-        {
-            breakpoint: 1300,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        },
-    ]
-});
+
 
 
 function accordion() {

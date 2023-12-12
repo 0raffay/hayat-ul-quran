@@ -21,7 +21,7 @@ include("includes/site-info.php");
     <title>Home | <?php echo $siteName; ?></title>
 </head>
 
-<body>
+<body class="homeBody">
 
     <!--==== HEADER START ====-->
     <?php include('includes/header.php') ?>
@@ -112,19 +112,7 @@ include("includes/site-info.php");
     <!--==== STEPS SECTION END ====-->
 
     <!--==== FREE TRIAL CTA START ====-->
-    <section class="free-trial-cta">
-        <div class="container py-3 border-radius-4 bg-gold side-prop position-relative">
-            <div class="row align-items-center py-3 px-2  px-md-5 py-md-5">
-                <div class="col-12 mb-md-3 col-lg-7">
-                    <h4 class="section__heading fc-white">Register for 3 Days Free Trial</h4>
-                    <p class="fc-white fs-14 lh-1-5">Hayat-ul-Quran Online Academy is pleased to offer a comprehensive 3-day trial, providing you with an exclusive opportunity to experience all our premium services. During this trial period, you'll have access to lesson videos, a detailed syllabus, and the expertise of a qualified Quran teacher—all at your chosen time. It's the perfect chance to explore the richness of our offerings and discover the transformative journey that awaits you with Hayat-ul-Quran.</p>
-                </div>
-                <div class="col-12 col-lg-5">
-                    <a href="#" class="btn bg-gold-700 text-white d-block w-50 m-auto mt-3 mt-md-0 ms-md-auto">Try Now.</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include("sections/free-trial-section.php"); ?>
     <!--==== FREE TRIAL CTA END ====-->
 
     <!--==== ROUND SECTION START ====-->
@@ -192,109 +180,12 @@ include("includes/site-info.php");
     <!--==== ROUND SECTION END ====-->
 
     <!--==== COUNTER SECTION START ====-->
-    <section class="counterSection">
-        <div class="container">
-            <div class="counterWrapper px-5 py-4 py-md-5 px-md-3 border-radius-4 bg-gold">
-                <div class="row py-md-4 px-md-5 align-items justify-content-center">
-                    <div class="counterCard col-md-6 col-lg-3">
-                        <h4 class="fs-45 fw-800">+<span class="count">384</span></h4>
-                        <p class="fs-16 fw-400">Completed Quranic Initiatives</p>
-                    </div>
-                    <div class="counterCard col-md-6 col-lg-3">
-                        <h4 class="fs-45 fw-800">+<span class="count">21</span></h4>
-                        <p class="fs-18 fw-400">Dedicated Quranic Tutors</p>
-                    </div>
-
-                    <div class="counterCard col-md-6 col-lg-3">
-                        <h4 class="fs-45 fw-800">+<span class="count">180</span></h4>
-                        <p class="fs-18 fw-400">Enthusiastic Quranic Students</p>
-                    </div>
-                    <div class="counterCard col-md-6 col-lg-3">
-                        <h4 class="fs-45 fw-800">+<span class="count">20,000</span></h4>
-                        <p class="fs-18 fw-400">Verses of the Quran Shared</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include("sections/counter-section.php") ?>
     <!--==== COUNTER SECTION END ====-->
 
 
     <!--==== TESTIMONIALS SECTION START ====-->
-    <section class="testimonailSection p-0 bg-cream">
-        <div class="testimonialWrapper">
-            <div class="container">
-                <div class="sliderText mb-5 mb-lg-5">
-                    <div class="text-center">
-                        <h6 class="section__label fc-gold">Testimonials</h6>
-                        <h4 class="section__heading fc-black">What Our Students Say <span class="fc-gold">About Us</span>
-                        </h4>
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="item">
-                        <div class="testimonialCard">
-                            <div class="testimonialCardMainImg">
-                                <img src="./assets/images/testimonial-comma.svg" alt="Reload Page">
-                            </div>
-                            <div class="testimonialCardMainContent">
-                                <p class="fs-16 fw-400">I am so grateful to have found this incredible online Quran Academy! The Tajweed lessons are exceptional, and the experienced instructors make learning the Quran an absolute joy. The interactive sessions have greatly improved my recitation skills. I highly recommend this academy to anyone seeking to learn the Quran with Tajweed. JazakAllah Khair!</p>
-                            </div>
-                        </div>
-                        <div class="testimonialPerson">
-                            <div class="testimonailPersonMainImg">
-                                <img src="./assets/images/testi-2.png" alt="Reload Page">
-                            </div>
-                            <div class="tesimonialPersonMainContent">
-                                <h5 class="fs-22 fw-800">Ayesha Ahmed</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonialCard">
-                            <div class="testimonialCardMainImg">
-                                <img src="./assets/images/testimonial-comma.svg" alt="Reload Page">
-                            </div>
-                            <div class="testimonialCardMainContent">
-                                <p class="fs-16 fw-400">Being a busy professional, I struggled to find time for traditional Quran classes. Thankfully, I discovered this online Quran Academy, and it has been a game-changer for me. The flexibility of the classes and the personalized attention from the teachers have allowed me to learn Tajweed at my own pace. The experience is top-notch, and I can feel the positive impact on my Quranic recitation. Shukriya!</p>
-                            </div>
-                        </div>
-                        <div class="testimonialPerson">
-                            <div class="testimonailPersonMainImg">
-                                <img src="./assets/images/testi-1.png" alt="Reload Page">
-                            </div>
-                            <div class="tesimonialPersonMainContent">
-                                <h5 class="fs-22 fw-800">Bilal Khan</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonialCard">
-                            <div class="testimonialCardMainImg">
-                                <img src="./assets/images/testimonial-comma.svg" alt="Reload Page">
-                            </div>
-                            <div class="testimonialCardMainContent">
-                                <p class="fs-16 fw-400">As a mother of three, finding the right Quran learning platform was crucial for me. This online Quran Academy exceeded my expectations. The instructors are not only knowledgeable but also patient and understanding. The emphasis on Tajweed has significantly improved the way I recite the Quran. I am confident that my children will benefit from this academy as well.</p>
-                            </div>
-                        </div>
-                        <div class="testimonialPerson">
-                            <div class="testimonailPersonMainImg">
-                                <img src="./assets/images/testi-3.png" alt="Reload Page">
-                            </div>
-                            <div class="tesimonialPersonMainContent">
-                                <h5 class="fs-22 fw-800">Fatima Abbasi</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sliderButton">
-                <button id="prevBtn"><img src="assets/images/arrow-left.svg" alt="Reload Page"></button>
-                <button id="nextBtn"><img src="assets/images/arrow-right.svg" alt="Reload Page"></button>
-            </div>
-        </div>
-    </section>
+    <?php include("sections/testimonial-section.php"); ?>
     <!--==== TESTIMONIALS SECTION END ====-->
 
 
@@ -354,26 +245,8 @@ include("includes/site-info.php");
     <!--==== FAQ SECTION END ====-->
 
     <!--==== CTA SECTION START ====-->
-    <section class="ctaSection no-padding">
-        <div class="ctaWrapper">
-            <div class="container">
-                <div class="ctaCard mx-auto">
-                    <h6 class="section__label fs-24 fc-gold">Register Now To</h6>
-                    <h5 class="fs-35 fw-800">Become a Student</h5>
-                    <p class="fs-18 fw-400">"Unlock the beauty of the Quran with us! 🌟 Join our Online Quran Academy to master the art of recitation with Tajweed. Our expert instructors provide personalized guidance, flexible schedules, and an immersive learning experience. Register now and embark on a transformative journey with the Quran. Let's learn, grow, and connect with the divine words together! 📖✨ #QuranLearning #TajweedMastery #RegisterNow"
-                    </p>
-                    <div class="ctaCardButton">
-                        <a href="" class="btn btn-primary">Register Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include("sections/cta-section.php") ?>
     <!--==== CTA SECTION END ====-->
-
-
-
-
 
     <!--==== FOOTER START ====-->
     <?php include('includes/footer.php') ?>
@@ -382,13 +255,8 @@ include("includes/site-info.php");
     <!--==== SCRIPTS START ====-->
     <?php include('includes/footer-scripts.php') ?>
     <!--==== SCRIPTS END ====-->
-    <div class="whatsapp-icon">
-        <a href="https://api.whatsapp.com/send?phone=923052156938&text=" target="_blank"> <i class="ri-whatsapp-line"></i></a>
-    </div>
 
-    <!-- slick slider cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- slick slider cdn -->
+
 </body>
 
 </html>

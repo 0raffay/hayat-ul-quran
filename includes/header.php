@@ -43,15 +43,15 @@
                 </a>
             </div>
             <ul class="nav-list p-0 m-0 list-unstyled d-flex">
-                <li><a class="px-3 fw-500" href="#">Home</a></li>
-                <li><a class="px-3 fw-500" href="#">About Us</a></li>
-                <li><a class="px-3 fw-500" href="#">Fees</a></li>
-                <li><a class="px-3 fw-500" href="#">Become a Teacher</a></li>
-                <li><a class="px-3 fw-500" href="#">Contact Us</a></li>
+                <li><a class="px-3 fw-500" href="index.php">Home</a></li>
+                <li><a class="px-3 fw-500" href="about.php">About Us</a></li>
+                <li><a class="px-3 fw-500" href="fees.php">Fees</a></li>
+                <li><a class="px-3 fw-500" href="become-a-teacher.php">Become a Teacher</a></li>
+                <li><a class="px-3 fw-500" href="contact-us.php">Contact Us</a></li>
             </ul>
 
             <div class="header-button">
-                <a href="#" class="btn btn-primary">Student Registration</a>
+                <a href="register.php" class="btn btn-primary">Student Registration</a>
             </div>
             <div class="burgerButton">
                 <div></div>

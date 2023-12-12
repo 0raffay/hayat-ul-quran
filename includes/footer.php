@@ -51,3 +51,7 @@
         </div>
     </div>
 </footer>
+
+<div class="whatsapp-icon">
+        <a href="https://api.whatsapp.com/send?phone=923052156938&text=" target="_blank"> <i class="ri-whatsapp-line"></i></a>
+    </div>

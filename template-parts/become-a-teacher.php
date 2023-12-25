@@ -1,26 +1,10 @@
-<?php include("includes/site-info.php") ?>
+<?php
+// Template Name: Become a Teacher
+get_header();
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <?php include("includes/compatibility.php"); ?>
-    <?php include("includes/og.php"); ?>
-
-    <!-- META TITLE AND DESCRIPTION -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <!-- META TITLE AND DESCRIPTION -->
-
-    <!--==== HEADER STYLES START ====-->
-    <?php include('includes/header-styles.php') ?>
-    <!--==== HEADER STYLES END ====-->
-
-    <title>Become a Teacher | <?php echo $siteName; ?></title>
-</head>
-
-<body>
-    <?php include("includes/header.php") ?>
+$siteName = "Hayat Ul Quran Academy";
+?>
 
 
     <!-- Inner page banner -->
@@ -39,7 +23,7 @@
             <form action="#" class="registerForm">
                 <div class="registerFormText mb-3 mb-md-5 mb-md-4 pb-md-30 text-center">
                     <h4 class="section__heading">Apply Now</h4>
-                    <p>We are actively looking for new Quran Teachers at <span class="fc-gold"><?php echo $siteName;?></span></p>
+                    <p>We are actively looking for new Quran Teachers at <span class="fc-gold"><?php echo $siteName; ?></span></p>
                 </div>
 
                 <div class="row align-items-center">
@@ -92,7 +76,7 @@
                         <div class="infoInput">
                             <div class="infoInput">
                                 <label for="education">Education <span>*</span></label>
-                                <select name="eductaion"  id="eduction">
+                                <select name="eductaion" id="eduction">
                                     <option value="">Enter your Educational Details</option>
                                     <option value="1">FSC</option>
                                     <option value="1">HSC</option>
@@ -125,12 +109,8 @@
 
 
 
-    <!--==== FOOTER START ====-->
-    <?php include('includes/footer.php') ?>
-    <!--==== FOOTER END ====-->
-    <!--==== SCRIPTS START ====-->
-    <?php include('includes/footer-scripts.php') ?>
-    <!--==== SCRIPTS END ====-->
-</body>
 
-</html>
+
+    <?php
+    get_footer();
+    ?>

@@ -23,11 +23,13 @@
     --fs-22: 22px;
     --fs-24: 24px;
     --fs-25: 25px;
-    --fs-30: 30px;
-    --fs-35: 35px;
-    --fs-45: 45px;
-    --fs-40: 40px;
-    --fs-50: 50px;
-    --fs-55: 55px;
-    --fs-60: 60px;
+    --fs-30: clamp(20px, 5vw, 30px);
+    --fs-35: clamp(22px, 5vw, 35px);
+    --fs-40: clamp(30px, 5vw, 40px);
+    --fs-45: clamp(28px, 5vw, 45px);
+    --fs-50: clamp(35px, 5vw, 50px);
+    --fs-55: clamp(38px, 5vw, 55px);
+    --fs-60: clamp(40px, 5vw, 60px);
+
+
 }

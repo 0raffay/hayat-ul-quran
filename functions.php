@@ -8,8 +8,7 @@ $package_pricing = array(
             "three_day_class" => "$45",
             "four_days_classes" => "$60",
             "four_days_classes" => "$60",
-            "six_days_classes" => "$70",
-            "quran_memorization" => "$100",
+            "weekend_classes" => "$70",
         )
     ),
     "uk" => array(
@@ -20,7 +19,7 @@ $package_pricing = array(
             "four_days_classes" => "&pound;34",
             "four_days_classes" => "&pound;44",
             "six_days_classes" => "&pound;54",
-            "quran_memorization" => "&pound;104",
+            "weekend_classes" => "&pound;104",
         )
     ),
 );
@@ -56,8 +55,8 @@ $packages = array(
             "Adming Meetings",
         )
     ),
-    "six_days_classes" => array(
-        "title" => "6 Classes in a week",
+    "five_days_classes" => array(
+        "title" => "5 Classes in a week",
         "perks" => array(
             "3 Days Free Trial",
             "Upto 20 Minutes",
@@ -66,8 +65,8 @@ $packages = array(
             "Adming Meetings",
         )
     ),
-    "quran_memorization" => array(
-        "title" => "Quran Memorization",
+    "weekend_classes" => array(
+        "title" => "Weekened Classes",
         "perks" => array(
             "3 Days Free Trial",
             "Upto 20 Minutes",
@@ -76,4 +75,23 @@ $packages = array(
             "Adming Meetings",
         )
     ),
+    // "quran_memorization" => array(
+    //     "title" => "Quran Memorization",
+    //     "perks" => array(
+    //         "3 Days Free Trial",
+    //         "Upto 20 Minutes",
+    //         "24 Classes Per Month",
+    //         "Monthly Test",
+    //         "Adming Meetings",
+    //     )
+    // ),
 );
+
+
+add_theme_support( 'post-thumbnails' ); 
+
+
+register_nav_menus(array(
+    'header-menu' => 'header-main-menu',
+    'footer-menu' => 'footer-main-menu',
+));
